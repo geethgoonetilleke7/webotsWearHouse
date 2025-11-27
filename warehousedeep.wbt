@@ -1,0 +1,885 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.030938708669204864 -0.9979936324846684 0.05524043651111513 5.258459375333638
+  position -3.8130941458917844 3.3070080686941754 19.245298186088352
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Solid {
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/textures/parquetry/light_strip_parquetry_base_color.jpg"
+          ]
+        }
+        roughness 1
+        roughnessMap ImageTexture {
+          url [
+            "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/textures/parquetry/light_strip_parquetry_roughness.jpg"
+          ]
+        }
+        metalness 0
+        normalMap ImageTexture {
+          url [
+            "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/textures/parquetry/light_strip_parquetry_normal.jpg"
+          ]
+        }
+      }
+      geometry IndexedFaceSet {
+        coord Coordinate {
+          point [
+            -7.5 -7.5 0
+            7.5 -7.5 0
+            -7.5 7.5 0
+            7.5 7.5 0
+          ]
+        }
+        texCoord TextureCoordinate {
+          point [
+            0 0
+            30 0
+            0 30
+            30 30
+          ]
+        }
+        coordIndex [
+          2, 0, 1, 3, -1
+        ]
+        texCoordIndex [
+          2, 0, 1, 3, -1
+        ]
+      }
+    }
+  ]
+  name "floor"
+  model "floor"
+  boundingObject Plane {
+    size 15 15
+  }
+  locked TRUE
+}
+Solid {
+  translation -6 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+      }
+      geometry Box {
+        size 0.05 15 0.01
+      }
+    }
+  ]
+  name "V1"
+}
+Solid {
+  translation 5.95 6 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+      }
+      geometry Box {
+        size 0.05 0.5 0.01
+      }
+    }
+  ]
+  name "VN1"
+}
+Solid {
+  translation -3 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+      }
+      geometry Box {
+        size 0.05 12 0.01
+      }
+    }
+  ]
+  name "V2"
+}
+Solid {
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+      }
+      geometry Box {
+        size 0.05 12 0.01
+      }
+    }
+  ]
+  name "V3"
+}
+Solid {
+  translation 3 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+      }
+      geometry Box {
+        size 0.05 12 0.01
+      }
+    }
+  ]
+  name "V4"
+}
+Solid {
+  translation 0 6 0
+  rotation 0 0 1 1.5708
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+      }
+      geometry Box {
+        size 0.05 12 0.01
+      }
+    }
+  ]
+  name "H1"
+}
+Solid {
+  translation 0 -6 0
+  rotation 0 0 1 1.5708
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+      }
+      geometry Box {
+        size 0.05 12 0.01
+      }
+    }
+  ]
+  name "H2"
+}
+Solid {
+  translation 0 6 0
+  rotation 0 0 1 1.5708
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+      }
+      geometry Box {
+        size 0.05 12 0.01
+      }
+    }
+  ]
+  name "H1(1)"
+}
+Solid {
+  translation 2.5 3 0
+  rotation 0 0 1 1.5708
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+      }
+      geometry Box {
+        size 0.05 1 0.01
+      }
+    }
+  ]
+  name "V4H1"
+}
+Solid {
+  translation 2.5 0 0
+  rotation 0 0 1 1.5708
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+      }
+      geometry Box {
+        size 0.05 1 0.01
+      }
+    }
+  ]
+  name "V4H2"
+}
+Solid {
+  translation 2.5 -3 0
+  rotation 0 0 1 1.5708
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+      }
+      geometry Box {
+        size 0.05 1 0.01
+      }
+    }
+  ]
+  name "V4H3"
+}
+Solid {
+  translation -0.5 3 0
+  rotation 0 0 1 1.5708
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+      }
+      geometry Box {
+        size 0.05 1 0.01
+      }
+    }
+  ]
+  name "V3H1"
+}
+Solid {
+  translation -0.5 0 0
+  rotation 0 0 1 1.5708
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+      }
+      geometry Box {
+        size 0.05 1 0.01
+      }
+    }
+  ]
+  name "V3H2"
+}
+Solid {
+  translation -0.5 -3 0
+  rotation 0 0 1 1.5708
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+      }
+      geometry Box {
+        size 0.05 1 0.01
+      }
+    }
+  ]
+  name "V3H3"
+}
+Solid {
+  translation -3.5 3 0
+  rotation 0 0 1 1.5708
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+      }
+      geometry Box {
+        size 0.05 1 0.01
+      }
+    }
+  ]
+  name "V2H1"
+}
+Solid {
+  translation -3.5 0 0
+  rotation 0 0 1 1.5708
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+      }
+      geometry Box {
+        size 0.05 1 0.01
+      }
+    }
+  ]
+  name "V2H2"
+}
+Solid {
+  translation -3.5 -3 0
+  rotation 0 0 1 1.5708
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+      }
+      geometry Box {
+        size 0.05 1 0.01
+      }
+    }
+  ]
+  name "V2H3"
+}
+Solid {
+  translation 2 3 0.13940519999999995
+  rotation 0.33254408908005606 0.9311234494242208 0.14974495233648635 6.752987059597848e-17
+  children [
+    DEF Box Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.3 0.3 0.3
+      }
+    }
+  ]
+  name "B1"
+  boundingObject USE Box
+  physics Physics {
+  }
+}
+Robot {
+  translation 6 6 0.0570769
+  rotation 0 0 1 -3.1415853071795863
+  children [
+    Group {
+      children [
+        Shape {
+          appearance DEF LIGHT_GRAY PBRAppearance {
+            baseColor 0.78 0.78 0.78
+            roughness 0.1
+            metalness 0.3
+          }
+          geometry Mesh {
+            url [
+              "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/rec/fabtino/protos/meshes/base_central.dae"
+            ]
+          }
+        }
+        Shape {
+          appearance DEF DARK_GRAY PBRAppearance {
+            baseColor 0.43 0.43 0.43
+            roughness 0.1
+            metalness 0.3
+          }
+          geometry Mesh {
+            url [
+              "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/rec/fabtino/protos/meshes/base.dae"
+            ]
+          }
+        }
+      ]
+    }
+    DEF HJ_FR HingeJoint {
+      jointParameters HingeJointParameters {
+        position 75.4995605383411
+        axis 0 1 0
+        anchor 0.285061 -0.235818 0.035257
+      }
+      device [
+        RotationalMotor {
+          name "front_right_wheel_joint"
+          maxVelocity 100
+          maxTorque 100
+        }
+        PositionSensor {
+          name "front_right_wheel_joint_sensor"
+        }
+      ]
+      endPoint Solid {
+        translation 0.285061 -0.235818 0.035257
+        rotation 0 1 0 0.10133685218606309
+        children [
+          DEF WHEEL_FR Group {
+            children [
+              Shape {
+                appearance DEF WHEEL_APPEARANCE PBRAppearance {
+                  baseColor 0.49 0.49 0.49
+                  roughness 0.3
+                  metalness 0.2
+                }
+                geometry DEF WHEEL_RIGHT Mesh {
+                  url [
+                    "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/rec/fabtino/protos/meshes/wheel1.dae"
+                  ]
+                }
+              }
+              Shape {
+                appearance DEF ROLLERS_APPEARANCE PBRAppearance {
+                  baseColor 0.24 0.24 0.24
+                  roughness 0.9
+                  metalness 0
+                }
+                geometry DEF ROLLERS_RIGHT Mesh {
+                  url [
+                    "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/rec/fabtino/protos/meshes/rollers1.dae"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+        name "wheel_fr"
+        contactMaterial "InteriorWheelMat"
+        boundingObject Pose {
+          translation 0 -0.0172 0
+          rotation 1 0 0 1.5708
+          children [
+            DEF BO_WHEEL Cylinder {
+              height 0.07
+              radius 0.1
+            }
+          ]
+        }
+        physics DEF PHYSICS_WHEEL Physics {
+        }
+      }
+    }
+    DEF HJ_BR HingeJoint {
+      jointParameters HingeJointParameters {
+        position 75.49953182770676
+        axis 0 1 0
+        anchor -0.284897 -0.238057 0.03513
+      }
+      device [
+        RotationalMotor {
+          name "back_right_wheel_joint"
+          maxVelocity 100
+          maxTorque 100
+        }
+        PositionSensor {
+          name "back_right_wheel_joint_sensor"
+        }
+      ]
+      endPoint Solid {
+        translation -0.284897 -0.238057 0.03513
+        rotation 0 1 0 0.10130814155172206
+        children [
+          DEF WHEEL_BR Group {
+            children [
+              Shape {
+                appearance USE WHEEL_APPEARANCE
+                geometry DEF WHEEL_LEFT Mesh {
+                  url [
+                    "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/rec/fabtino/protos/meshes/wheel2.dae"
+                  ]
+                }
+              }
+              Shape {
+                appearance USE ROLLERS_APPEARANCE
+                geometry DEF ROLLERS_LEFT Mesh {
+                  url [
+                    "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/rec/fabtino/protos/meshes/rollers2.dae"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+        name "wheel_br"
+        contactMaterial "ExteriorWheelMat"
+        boundingObject Pose {
+          translation 0 -0.015 0
+          rotation 1 0 0 1.5708
+          children [
+            USE BO_WHEEL
+          ]
+        }
+        physics USE PHYSICS_WHEEL
+      }
+    }
+    DEF HJ_FL HingeJoint {
+      jointParameters HingeJointParameters {
+        position 50.03791982073907
+        axis 0 1 0
+        anchor 0.284897 0.238057 0.03513
+      }
+      device [
+        RotationalMotor {
+          name "front_left_wheel_joint"
+          maxVelocity 100
+          maxTorque 100
+        }
+        PositionSensor {
+          name "front_left_wheel_joint_sensor"
+        }
+      ]
+      endPoint Solid {
+        translation 0.284897 0.238057 0.03513
+        rotation 0 -1 0 0.2275626366976208
+        children [
+          DEF WHEEL_FL Pose {
+            rotation 0 0 1 3.141592653589793
+            children [
+              Shape {
+                appearance USE ROLLERS_APPEARANCE
+                geometry USE ROLLERS_LEFT
+              }
+              Shape {
+                appearance USE WHEEL_APPEARANCE
+                geometry USE WHEEL_LEFT
+              }
+            ]
+          }
+        ]
+        name "wheel_fl"
+        contactMaterial "ExteriorWheelMat"
+        boundingObject Pose {
+          translation 0 0.015 0
+          rotation 1 0 0 1.5708
+          children [
+            USE BO_WHEEL
+          ]
+        }
+        physics USE PHYSICS_WHEEL
+      }
+    }
+    DEF HJ_BL HingeJoint {
+      jointParameters HingeJointParameters {
+        position 50.037895423971264
+        axis 0 1 0
+        anchor -0.285061 0.235818 0.035257
+      }
+      device [
+        RotationalMotor {
+          name "back_left_wheel_joint"
+          maxVelocity 100
+          maxTorque 100
+        }
+        PositionSensor {
+          name "back_left_wheel_joint_sensor"
+        }
+      ]
+      endPoint Solid {
+        translation -0.285061 0.235818 0.035257
+        rotation 0 -1 0 0.22758703346542836
+        children [
+          DEF WHEEL_BL Pose {
+            rotation 0 0 1 3.141592653589793
+            children [
+              Shape {
+                appearance USE WHEEL_APPEARANCE
+                geometry USE WHEEL_RIGHT
+              }
+              Shape {
+                appearance USE ROLLERS_APPEARANCE
+                geometry USE ROLLERS_RIGHT
+              }
+            ]
+          }
+        ]
+        name "wheel_bl"
+        contactMaterial "InteriorWheelMat"
+        boundingObject Pose {
+          translation 0 0.0172 0
+          rotation 1 0 0 1.5708
+          children [
+            USE BO_WHEEL
+          ]
+        }
+        physics USE PHYSICS_WHEEL
+      }
+    }
+    DistanceSensor {
+      translation 0.01 0 -0.02
+      rotation 0 1 0 1.5708
+      children [
+        DEF DS Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+          }
+          geometry Box {
+            size 0.02 0.01 0.02
+          }
+        }
+      ]
+      name "D5"
+      boundingObject USE DS
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.01 0.01 -0.02
+      rotation 0 1 0 1.5708
+      children [
+        DEF DS Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+          }
+          geometry Box {
+            size 0.02 0.01 0.02
+          }
+        }
+      ]
+      name "D4"
+      boundingObject USE DS
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.01 0.02 -0.02
+      rotation 0 1 0 1.5708
+      children [
+        DEF DS Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+          }
+          geometry Box {
+            size 0.02 0.01 0.02
+          }
+        }
+      ]
+      name "D3"
+      boundingObject USE DS
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.01 0.03 -0.02
+      rotation 0 1 0 1.5708
+      children [
+        DEF DS Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+          }
+          geometry Box {
+            size 0.02 0.01 0.02
+          }
+        }
+      ]
+      name "D2"
+      boundingObject USE DS
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.01 0.04 -0.02
+      rotation 0 1 0 1.5708
+      children [
+        DEF DS Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+          }
+          geometry Box {
+            size 0.02 0.01 0.02
+          }
+        }
+      ]
+      name "D1"
+      boundingObject USE DS
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.01 0.1 -0.02
+      rotation 0 1 0 1.5708
+      children [
+        DEF DS Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+          }
+          geometry Box {
+            size 0.02 0.01 0.02
+          }
+        }
+      ]
+      name "D0"
+      boundingObject USE DS
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.01 -0.01 -0.02
+      rotation 0 1 0 1.5708
+      children [
+        DEF DS Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+          }
+          geometry Box {
+            size 0.02 0.01 0.02
+          }
+        }
+      ]
+      name "D6"
+      boundingObject USE DS
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.01 -0.02 -0.02
+      rotation 0 1 0 1.5708
+      children [
+        DEF DS Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+          }
+          geometry Box {
+            size 0.02 0.01 0.02
+          }
+        }
+      ]
+      name "D7"
+      boundingObject USE DS
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.01 -0.03 -0.02
+      rotation 0 1 0 1.5708
+      children [
+        DEF DS Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+          }
+          geometry Box {
+            size 0.02 0.01 0.02
+          }
+        }
+      ]
+      name "D8"
+      boundingObject USE DS
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.01 -0.04 -0.02
+      rotation 0 1 0 1.5708
+      children [
+        DEF DS Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+          }
+          geometry Box {
+            size 0.02 0.01 0.02
+          }
+        }
+      ]
+      name "D9"
+      boundingObject USE DS
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.01 -0.1 -0.02
+      rotation 0 1 0 1.5708
+      children [
+        DEF DS Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+          }
+          geometry Box {
+            size 0.02 0.01 0.02
+          }
+        }
+      ]
+      name "D10"
+      boundingObject USE DS
+      type "infra-red"
+    }
+    Camera {
+      translation 0.45 0 0.04
+      children [
+        DEF Cam_fr Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+          }
+          geometry Box {
+            size 0.02 0.05 0.05
+          }
+        }
+      ]
+      boundingObject USE Cam_fr
+    }
+    DEF IMU Pose {
+      children [
+        Accelerometer {
+          lookupTable [
+            -100 -100 -0.002
+            100 100 0.002
+          ]
+        }
+        Gyro {
+          lookupTable [
+            -100 -100 -0.002
+            100 100 0.002
+          ]
+        }
+        Compass {
+          lookupTable [
+            -1 -1 -0.2
+            1 1 0.2
+          ]
+        }
+      ]
+    }
+    Pose {
+      translation 0 0 0.145
+    }
+    Pose {
+      translation 0.365 0 0.161
+    }
+    Pose {
+      translation -0.365 0 0.161
+      rotation 0 0 1 3.14159
+    }
+  ]
+  name "Fabtino"
+  boundingObject Group {
+    children [
+      DEF FRAME_CENTER Pose {
+        translation 0 0 -0.0115
+        children [
+          Box {
+            size 0.726 0.63 0.031
+          }
+        ]
+      }
+      DEF FRAME_SIDES Pose {
+        translation 0 0 -0.0115
+        children [
+          Box {
+            size 0.87 0.486 0.031
+          }
+        ]
+      }
+      DEF FRAME_CORNER_FL Pose {
+        translation 0.363 0.243 -0.0115
+        children [
+          DEF FRAME_CORNER_CYLINDER Cylinder {
+            height 0.031
+            radius 0.072
+          }
+        ]
+      }
+      DEF FRAME_CORNER_FR Pose {
+        translation -0.363 0.243 -0.0115
+        children [
+          USE FRAME_CORNER_CYLINDER
+        ]
+      }
+      DEF FRAME_CORNER_BL Pose {
+        translation 0.363 -0.243 -0.0115
+        children [
+          USE FRAME_CORNER_CYLINDER
+        ]
+      }
+      DEF FRAME_CORNER_BR Pose {
+        translation -0.363 -0.243 -0.0115
+        children [
+          USE FRAME_CORNER_CYLINDER
+        ]
+      }
+      Pose {
+        translation 0 0 0.062
+        children [
+          Box {
+            size 0.343 0.603 0.167
+          }
+        ]
+      }
+      Pose {
+        translation 0 0 0.062
+        children [
+          Box {
+            size 0.843 0.423 0.167
+          }
+        ]
+      }
+    ]
+  }
+  physics Physics {
+    density -1
+    mass 30
+  }
+  controller "wearhousedeep3"
+}
